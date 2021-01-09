@@ -11,12 +11,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: "AIzaSyBTE3xLEGLRC-MCo54Vxz2vPtxzP_hgXTw",
-    authDomain: "quickstart-1607810820955.firebaseapp.com",
-    projectId: "quickstart-1607810820955",
-    storageBucket: "quickstart-1607810820955.appspot.com",
-    messagingSenderId: "651820308814",
-    appId: "1:651820308814:web:7d11260f42ca9ec029661f",
+    apiKey: "AIzaSyATc-uDAlbhWTAqW-b6MpvA-7nHtYHDAPA",
+    authDomain: "chat-app-f913d.firebaseapp.com",
+    projectId: "chat-app-f913d",
+    storageBucket: "chat-app-f913d.appspot.com",
+    messagingSenderId: "505071026941",
+    appId: "1:505071026941:web:9e2ba702d1f4fc16657494"
   });
 }else {
   firebase.app(); // if already initialized, use that one
@@ -54,7 +54,7 @@ function SignIn() {
   return (
     <>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      {/* <p>Do not violate the community guidelines or you will be banned for life!</p> */}
     </>
   )
 
