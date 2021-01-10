@@ -2,6 +2,10 @@ body {
   background-color: #282c34;
 }
 
+p, h1, h2, h3, h4 {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   max-width: 728px;
@@ -70,7 +74,6 @@ form button {
   background-color: rgb(56, 56, 143);
 }
 
-
 input {
   line-height: 1.5;
   width: 100%;
@@ -99,7 +102,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
 .sign-in {
   color: #282c34;
   background: white;
@@ -107,20 +109,17 @@ button:disabled {
   margin: 0 auto;
 }
 
-
-
-
 ul, li {
   text-align: left;
   list-style: none;
 }
 
-p {
+.text {
   max-width: 500px;
   margin-bottom: 12px;
   line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 8px 20px;
+  border-radius: 10px;
   position: relative;
   color: white;
   text-align: center;
@@ -131,17 +130,16 @@ p {
   align-items: center;
 }
 
-
 .sent {
   flex-direction: row-reverse;
 }
 
-.sent p {
+.sent .text{
   color: white;
   background: #0b93f6;
   align-self: flex-end;
 }
-.received p {
+.received .text{
   background: #e5e5ea;
   color: black;
 }

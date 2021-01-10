@@ -5,6 +5,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
+import ReactMarkdown from 'react-markdown'
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import { useAuthState } from "react-firebase-hooks/auth";
 
@@ -120,8 +121,8 @@ function ChatMessage(props) {
 
   return (<>
     <div className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt="" />
-      <p>{text}</p>
+      <img src={photoURL || 'https://api.hello-avatar.com/adorables/120/myseed'} alt="" />
+      <ReactMarkdown className="text">{text}</ReactMarkdown>
     </div>
   </>)
 }
